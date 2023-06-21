@@ -7,6 +7,33 @@ a:hover{
     color:#2962ff; 
 }
 
-#name, #about{
-    display: none;
+#name, #about1, #about2{
+    opacity: 0%;
+}
+
+#noteworks:hover{
+    color:gray; 
+}
+
+#noteworks{
+    color:#2962ff; 
+    text-decoration: none;
+}
+
+#othello{
+    color:#ffcc80; 
+    text-decoration: none;
+}
+
+#links{
+    opacity: 0%;
+}
+
+#othello:hover{
+    color:gray; 
+}
+
+
+.icon{
+    opacity: 0%;
 }
