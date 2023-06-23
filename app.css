@@ -37,3 +37,61 @@ a:hover{
 .icon{
     opacity: 0%;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+  }
+  
+  .rotating-text {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    color: white;
+    transform: translateX(-80px);
+  }
+  .rotating-text p {
+    display: inline-flex !important; 
+    margin: 0;
+    vertical-align: top !important;
+  }
+  .rotating-text p .word {
+    position: absolute !important;
+    display: flex !important;
+    opacity: 0;
+  }
+  .rotating-text p .word .letter {
+    transform-origin: center center 25px;
+  }
+  .rotating-text p .word .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+  }
+  .rotating-text p .word .letter.in {
+    transition: 0.38s ease;
+  }
+  .rotating-text p .word .letter.behind {
+    transform: rotateX(-90deg);
+  }
+  
+  .w-1 {
+    color: #0C0A3E;
+  }
+  
+  .w-2 {
+    color: #8e44ad;
+  }
+  
+  .w-3 {
+    color: #3498db;
+  }
+  
+  .w-4 {
+    color: #2ecc71;
+  }
+  
+  .w-5 {
+    color: #f1c40f;
+  }
