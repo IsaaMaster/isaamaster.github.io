@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Isaac Song</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body style="background-image: none; background-color: black;">
+    <div class = "container-fluid" id = "noteworksection">
+
+      <nav class = "navbar navbar navbar-expand-lg bg-black" data-bs-theme="dark" id="customNav">
+        <div class = "container-fluid">
+          <a class = "navbar-brand" style = "font-size:150%;" href = "index.html">Isaac Song</a>
+          <div class = "collapse navbar-collapse">
+            <div class = "navbar-nav ms-auto mb-2 mb-lg-0">
+              <a class = "nav-link" target = "_self" href = "index.html">Home</a>
+              <a class = "nav-link" target = "_self" href = "websites.html">Projects</a>
+              <a class = "nav-link" target = "_self" href = "research.html">Research</a>
+
+            </div>
+
+          </div>
+        </div>
+      </nav>
+      <div class = "row justify-content-end">
+        <div class = "col-11">
+          <h1>Projects</h1>
+          <p style = "font-size: 120%;">Below are a list of projects that I have worked on over the past few months. Click on a project to learn more.</p>
+        </div>
+      </div>
+      
+      <div class = "row d-flex justify-content-center align-items-center">
+        <div class = "col-md-5 p-3">
+          <a href = "https://noteworks5.herokuapp.com/"><h1>NoteWorks 5</h1></a>
+          <img class="image" src="notes.png" alt="notes" id="noteworks">
+            
+          </p>
+        </div>
+        <div class = "col-md-5 p-3">
+          
+        </div>
+      </div>
+
+      <!--Noteoworks 5 Modal-->
+      <div class="modal fade" id="noteWorksModal" tabindex="-1" aria-labelledby="noteWorksModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="exampleModalLabel">Noteworks5</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class ="modalImage" src="notes.png" alt="notes">
+              <div class = "text-center" style = "margin-bottom: 10px;">
+                <h3>Tech Stack:</h3>
+                <img class = "techIcon" src = "icons/postgresql.png" alt = "postgresql">
+                <img class = "techIcon" src = "icons/django.png" alt = "django" style = "width:24px;">
+                <img class = "techIcon" src = "icons/python.png" alt = "python">
+                <img class = "techIcon" src = "icons/heroku.jpg" alt = "python" style = "width:24px;">
+                <img class = "techIcon" src = "icons/bootstrap.png" alt = "python">
+                <img class = "techIcon" src = "icons/azure.png" alt = "python">
+                <img class = "techIcon" src = "icons/jQuery.png" alt = "python">
+                <img class = "techIcon" src = "icons/htmlcssjs.png" alt = "python" style="width: 90px; height:34px;">
+
+
+              </div>
+              <p>Noteworks was a project I started for fun and to improve my web development skills. However, it has grown to become one my largest projects and currently has a host of different features. At its core, it is a simple notetaking app, designed to allow users to write down thoughts and ideas without the distractions of having too many settings. At the same time, it still has the necessary features of a notetaking app and a simply elegant design.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+   
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+        
+
+        
+       
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha384-Ft/vb48LwsAEtgltj7o+6vtS2esTU9PCpDqcXs4OCVQFZu5BqprHtUCZ4kjK+bpE" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha384-4D3G3GikQs6hLlLZGdz5wLFzuqE9v4yVGAcOH86y23JqBDPzj9viv0EqyfIa6YUL" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    
+  </body>
+</html>

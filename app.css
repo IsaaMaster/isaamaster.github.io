@@ -2,27 +2,8 @@ a {
     text-decoration: none; 
     color:white;
 }
-
-a:hover{
-    color:#2962ff; 
-}
-
-#name, #about1, #about2{
+#me, #about1, #about2{
     opacity: 0%;
-}
-
-#noteworks:hover{
-    color:gray; 
-}
-
-#noteworks{
-    color:#2962ff; 
-    text-decoration: none;
-}
-
-#othello{
-    color:#ffcc80; 
-    text-decoration: none;
 }
 
 #links{
@@ -39,59 +20,81 @@ a:hover{
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #222;
-  }
+    background: black;
+    color:white;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom;
+}
+
+
+#name{
+  font-size: 350%;
+}
+
+#description{
+  font-size: 150%;
+}
+
+#customNav{
+  font-size: 165%;
+}
+
+#customNav a{
+  padding: 0px 20px;
+  color: white;  
+}
+
+#customNav a:hover{
+  color: #0074D9;  
+}
+
+#profilePic{
   
-  .rotating-text {
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 56px;
-    color: white;
-    transform: translateX(-80px);
-  }
-  .rotating-text p {
-    display: inline-flex !important; 
-    margin: 0;
-    vertical-align: top !important;
-  }
-  .rotating-text p .word {
-    position: absolute !important;
-    display: flex !important;
-    opacity: 0;
-  }
-  .rotating-text p .word .letter {
-    transform-origin: center center 25px;
-  }
-  .rotating-text p .word .letter.out {
-    transform: rotateX(90deg);
-    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
-  }
-  .rotating-text p .word .letter.in {
-    transition: 0.38s ease;
-  }
-  .rotating-text p .word .letter.behind {
-    transform: rotateX(-90deg);
-  }
-  
-  .w-1 {
-    color: #FC0A3E;
-  }
-  
-  .w-2 {
-    color: #8e44ad;
-  }
-  
-  .w-3 {
-    color: #3498db;
-  }
-  
-  .w-4 {
-    color: #2ecc71;
-  }
-  
-  .w-5 {
-    color: #f1c40f;
-  }
+  padding: 8px 8px; 
+  border:4px solid white;
+}
+
+div.webSection{
+  margin: 0px 0px 0px 0px;
+  padding:25px 25px;
+}
+
+#research {
+  font-size: 150%;
+}
+
+.image{
+  padding:15px 0px 0px 0px; 
+  height:100%; 
+  width: 100%; 
+  border:2px solid white; 
+  border-radius: 30px;
+}
+
+.image:hover{
+  border:2px solid black; 
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#noteworks{
+  background-color: white;
+}
+
+.modal{
+  color:black;
+}
+
+.modalImage{
+  height:100%; 
+  width: 100%; 
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+.techIcon{
+  height: 30px; 
+  width: 30px;
+  margin: 0px 2px 0px 2px;
+}
