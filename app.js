@@ -33,6 +33,17 @@ $(document).ready(function() {
       modal.modal('show');
    });     
 
+   $('#reversi').click(function() {
+      var modal = $('#reversiModal'); 
+      modal.modal('show');
+   });    
+   
+   $('#personal').click(function() {
+      var modal = $('#personalModal'); 
+      modal.modal('show');
+   });     
+
+
     
 
     

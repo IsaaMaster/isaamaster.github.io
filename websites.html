@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Isaac Song</title>
+    <link rel="icon" href="profile.jpg" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="app.css" />
   </head>
@@ -35,14 +36,23 @@
       
       <div class = "row d-flex justify-content-center align-items-center">
         <div class = "col-md-5 p-3">
-          <a href = "https://noteworks5.herokuapp.com/"><h1>NoteWorks 5</h1></a>
+          <h1>
+            <img src="icons/whiteNoteIcon.png" alt="noteworksicon" height="36px" width = "36px"> NoteWorks 5
+          </h1>
+
           <img class="image" src="notes.png" alt="notes" id="noteworks">
             
           </p>
         </div>
+
         <div class = "col-md-5 p-3">
-          
+          <h1>Reversi</h1>
+          <img src="reversi.png" alt="notes" class = "image" id = "reversi">
         </div>
+
+        <div class = "col-md-5 p-3">
+          <h1>Personal Website</h1>
+          <img src="personal.png" alt="notes" class = "image" id = "personal">
       </div>
 
       <!--Noteoworks 5 Modal-->
@@ -50,21 +60,23 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
           <div class="modal-content">
             <div class="modal-header">
-              <h2 class="modal-title" id="exampleModalLabel">Noteworks5</h2>
+              <h2 class="modal-title" id="exampleModalLabel">
+                Noteworks5
+              </h2>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <img class ="modalImage" src="notes.png" alt="notes">
               <div class = "text-center" style = "margin-bottom: 10px;">
-                <h3>Tech Stack:</h3>
+                <h4>Tech Stack:</h4>
                 <img class = "techIcon" src = "icons/postgresql.png" alt = "postgresql">
                 <img class = "techIcon" src = "icons/django.png" alt = "django" style = "width:24px;">
                 <img class = "techIcon" src = "icons/python.png" alt = "python">
-                <img class = "techIcon" src = "icons/heroku.jpg" alt = "python" style = "width:24px;">
-                <img class = "techIcon" src = "icons/bootstrap.png" alt = "python">
-                <img class = "techIcon" src = "icons/azure.png" alt = "python">
-                <img class = "techIcon" src = "icons/jQuery.png" alt = "python">
-                <img class = "techIcon" src = "icons/htmlcssjs.png" alt = "python" style="width: 90px; height:34px;">
+                <img class = "techIcon" src = "icons/heroku.jpg" alt = "heroku" style = "width:24px;">
+                <img class = "techIcon" src = "icons/bootstrap.png" alt = "boostrap">
+                <img class = "techIcon" src = "icons/azure.png" alt = "azure">
+                <img class = "techIcon" src = "icons/jQuery.png" alt = "jQuery">
+                <img class = "techIcon" src = "icons/htmlcssjs.png" alt = "htmlcssjs" style="width: 90px; height:34px;">
 
 
               </div>
@@ -72,7 +84,73 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-   
+              <button type = "button" class = "btn btn-primary"><a target = "_blank" href = "https://noteworks5.herokuapp.com/">View Site!</a></button>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!--Reversi Modal-->
+       <div class="modal fade" id="reversiModal" tabindex="-1" aria-labelledby="reversiModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="exampleModalLabel">
+                Reversi
+              </h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class ="modalImage" src="reversi.png" alt="notes">
+              <div class = "text-center" style = "margin-bottom: 10px;">
+                <h4>Tech Stack:</h4>
+                <img class = "techIcon" src = "icons/node.png" alt = "nodejs" style="width: 90px; height:34px;">
+                <img class = "techIcon" src = "icons/heroku.jpg" alt = "python" style = "width:24px;">
+                <img class = "techIcon" src = "icons/sockets.png" alt = "sockets.io">
+                <img class = "techIcon" src = "icons/bootstrap.png" alt = "python">
+                <img class = "techIcon" src = "icons/jQuery.png" alt = "python">
+                <img class = "techIcon" src = "icons/htmlcssjs.png" alt = "python" style="width: 90px; height:34px;">
+ 
+
+
+              </div>
+              <p>Remade Reversi (aka Othello) as a web app, allowing users to play against each other online, as well as send game challenges and chat in lobbies. If you want to check out the website, make sure to open it in two pages you that you can try playing against yourself.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type = "button" class = "btn btn-primary"><a target = "_blank" href = "https://reversi-isaacsong.herokuapp.com/">View Site!</a></button>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Personal Modal-->
+      <div class="modal fade" id="personalModal" tabindex="-1" aria-labelledby="personalWebsiteModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="exampleModalLabel">
+                Personal Website
+              </h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class ="modalImage" src="personal.png" alt="notes">
+              <div class = "text-center" style = "margin-bottom: 10px;">
+                <h4>Tech Stack:</h4>
+                <img class = "techIcon" src = "icons/bootstrap.png" alt = "python">
+                <img class = "techIcon" src = "icons/jQuery.png" alt = "python">
+                <img class = "techIcon" src = "icons/htmlcssjs.png" alt = "python" style="width: 90px; height:34px;">
+              </div>
+              <p>One of my more recently proejcts, but far overdue, this project is the one you are looking at right now and was created to showcase my projects and research.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            
+  
             </div>
           </div>
         </div>
