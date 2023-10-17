@@ -115,3 +115,13 @@ div.webSection{
 .researchlink:hover{
   opacity: 70%;
 }
+
+.hidden{
+  opacity: 0%;
+  transition: all 1.3s ease-out;
+}
+
+.show{
+  opacity: 100%;
+  filter: blur(0px);
+}
