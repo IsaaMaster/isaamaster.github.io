@@ -9,20 +9,20 @@ $(document).ready(function() {
 
     $('#links a').attr('target', '_blank');
 
-    var name = $('#me').animate({opacity: 1}, 1000).promise();
+    var name = $('#me').animate({opacity: 1}, 700).promise();
     
 
     $.when(name).done(function() {
-      var about1 = $('#about1').animate({opacity: 1}, 2000).promise();
+      var about1 = $('#about1').animate({opacity: 1}, 200).promise();
 
       $.when(about1).done(function() {
-         $('#about2').animate({opacity: 1}, 2000).promise();
+         $('#about2').animate({opacity: 1},200).promise();
 
          $('.icon').each(function(index) {
-            $(this).delay(500 * index).animate({opacity: 1}, 2000);
+            $(this).delay(500 * index).animate({opacity: 1}, 1200);
          });
 
-         $('#links').animate({opacity: 1}, 4000).promise();
+         $('#links').animate({opacity: 1}, 200).promise();
 
       }); 
     }); 
