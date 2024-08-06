@@ -121,3 +121,7 @@ div.webSection{
   opacity: 100%;
   filter: blur(0px);
 }
+
+.min-height-65vh {
+  min-height: 65vh; /* 50% of the viewport height */
+}
