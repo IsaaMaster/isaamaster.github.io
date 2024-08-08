@@ -87,6 +87,8 @@
             aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" id="noteworks">
@@ -101,6 +103,13 @@
             <div class="carousel-caption d-none d-md-block">
               <h3>Othello</h3>
               <p>A modern take on a classic game.</p>
+            </div>
+          </div>
+          <div class="carousel-item" id = "stocksBot">
+            <img src="StocksBot.png" alt="stock bot chat" class = "d-block w-100">
+            <div class = "carousel-caption d-none d-md-block">
+              <h3>Discord Stocks Bot</h3>
+              <p>An easy way to track the market.</p>
             </div>
           </div>
           <div class="carousel-item" id="personal">
@@ -205,6 +214,33 @@
               <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
             </svg>
           </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Stocks Bot Modal-->
+  <div class="modal fade" id="stocksBotModal" tabindex="-1" aria-labelledby="stocksBotModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">
+            Discord Stocks Bot
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center" style="margin-bottom: 10px;">
+            <h4>Tech Stack:</h4>
+            <img class="techIcon" src="icons/bootstrap.png" alt="python">
+            <img class="techIcon" src="icons/jQuery.png" alt="python">
+            <img class="techIcon" src="icons/htmlcssjs.png" alt="python" style="width: 90px; height:34px;">
+          </div>
+          <p>This was one of my first end to end projects, created for fun so that I could see stocks in my discord channel. There's also features to simulate trading and compete with friends with the highest gains. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>

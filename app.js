@@ -50,6 +50,11 @@ $(document).ready(function() {
       modal.modal('show');
    });     
 
+   $('#stocksBot').click(function() {
+      var modal = $('#stocksBotModal'); 
+      modal.modal('show');
+   });     
+
 
    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
