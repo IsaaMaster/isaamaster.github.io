@@ -70,10 +70,7 @@ div.webSection{
   border-radius: 30px;
 }
 
-.image:hover{
-  scale: 1.01;
-  cursor: pointer;
-}
+
 
 #noteworks{
   background-color: white;
@@ -118,4 +115,7 @@ div.webSection{
 
 .min-height-65vh {
   min-height: 65vh; /* 50% of the viewport height */
+}
+.carousel-inner:hover{
+  cursor: pointer;
 }
