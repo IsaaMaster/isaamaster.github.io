@@ -5,6 +5,10 @@
 
 $(document).ready(function() {
 
+
+   const navbarHeight = document.querySelector(".navbar").offsetHeight;
+   document.body.style.paddingTop = `${navbarHeight}px`;
+   
    const myCarouselElement = document.querySelector('#carouselExampleCaptions')
 
    const carousel = new bootstrap.Carousel(myCarouselElement, {

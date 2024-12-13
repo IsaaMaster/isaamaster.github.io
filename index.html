@@ -9,24 +9,22 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <title>Isaac Song</title>
   <link rel="icon" href="profile.jpg" type="image/x-icon">
-  <!-- CSS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+  
   <link defer rel="stylesheet" href="app.css" />
 </head>
 
 <body>
-  <nav class="navbar navbar navbar-expand-lg bg-light" id="customNav">
+  <nav class="navbar fixed-top navbar-expand-lg bg-light" id="customNav">
     <div class="container-fluid">
       <a class="navbar-brand" style="font-size:150%;" href="index.html">Isaac Z. Song</a>
       <div class="collapse navbar-collapse">
         <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <a class="nav-link" target="_self" href="#home">🏠Home</a>
-          <a class="nav-link" target="_self" href="#projects">&#128187Projects</a>
-          <a class="nav-link" target="_self" href="#experience">&#128640Experience</a>
-          <a href="#about" class="nav-link" target="_self">&#10024About</a>
-        </div>
+          <a class="nav-link" target="_self" href="#home"><img class = "mb-3" src="home.png" height="35px" width="35x"> Home</a>
+          <a class="nav-link" target="_self" href="#projects"><img class = "mb-2" src="startup.png" height="35px" width="35x"> Projects</a>
+          <a class="nav-link" target="_self" href="#experience"><img class = "mb-3" src="briefcase.png" height="35px" width="35x"> Experience</a>
+          <a href="#about" class="nav-link" target="_self"><img class = "mb-2" src="user.png" height="35px" width="35x"> About</a>
+        </div> 
       </div>
     </div>
   </nav>
@@ -43,7 +41,7 @@
         <div id="me">
           <h1 id="name">&#128075Hi! This is Isaac Song.</h1>
           <h3 id="description">CS, Math and Chem @ Westmont College</h3>
-          <p id="description">Incoming SWE Intern at Captial One, 1x Principal Financial Group SWE Intern, 1x NRG Data Analyst Intern, Lead CS TA, and
+          <p id="description">Incoming SWE Intern at Captial One, ex-Principal Financial Group SWE Intern, ex-NRG Data Analyst Intern, Lead CS TA, and
             President of the Westmont CS Club</p>
         </div>
 
@@ -72,7 +70,7 @@
   <div style="margin-bottom: 80px;"></div>
   <div class="row">
     <div class="col-12 text-center" title="">
-      <h1>&#128187; Projects</h1>
+      <h1><img class = "mb-3" src="startup.png" height="60px" width="60px"> Projects</h1>
       <p class="fs-5">A collection of websites I've built in my free time. Click on a
         project to learn more!</p>
     </div>
@@ -282,8 +280,25 @@
   <div class="container-fluid min-vh-100 d-flex justify-content-center align-items">
     <div class="justify-content-center row hidden align-items-center d-flex" id="research">
       <div class="col-lg-6 py-3">
-        <h1 class="py-5">&#128640Experience</h1>
+        <h1 class="py-11s"><img class = "mb-3" src="briefcase.png" height="60px" width="60x"> Experience</h1>
         <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero"
+                aria-expanded="false" aria-controls="collapseZero">
+                <h4>
+                  <img src="Capital_One_Logo.png" alt="Principal Logo" height="30px" width="75px">
+                  Capital One SWE Intern
+                </h4>
+              </button>
+            </h2>
+            <div id="collapseZero" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>May 2024 - Present</p>
+                <p>Incoming SWE Intern at Captial One</p>
+              </div>
+            </div>
+          </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -400,7 +415,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 pt-5 ps-3">
+      <div class="col-lg-4 pt-3 ms-5">
         <img class="rounded-5" src="working.JPG" alt="profile" height="100%" width="100%">
       </div>
     </div>
@@ -413,8 +428,8 @@
         <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
           data-type="HORIZONTAL" data-vanity="isaac-song-30b78019b" data-version="v1"></div>
       </div>
-      <div class="col-lg-5">
-        <h1>&#10024;About Me</h1>
+      <div class="col-lg-7">
+        <h1><img class = "mb-3" src="user.png" height="60px" width="60px"> About Me</h1>
         <p>I am a undergraduate student at Westmont College in Santa Barbara stuyding computer science and chemistry.
           Currently, I am involved with full-stack web and software development, thin film research, club leaderhip positions, and TAing for
           several classes. In my free time, I enjoy going to the beach with friends, tossing the frisbee around, eating tasty food, and
