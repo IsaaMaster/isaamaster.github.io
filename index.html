@@ -14,8 +14,8 @@
   <link defer rel="stylesheet" href="app.css" />
 </head>
 
-<body>
-  <nav class="navbar fixed-top navbar-expand-lg bg-light" id="customNav">
+<body data-bs-theme="dark">
+  <nav class="navbar fixed-top navbar-expand-lg bg-dark" id="customNav">
     <div class="container-fluid">
       <a class="navbar-brand" style="font-size:150%;" href="index.html">Isaac Z. Song</a>
       <div class="collapse navbar-collapse">
@@ -29,6 +29,10 @@
     </div>
   </nav>
 
+  <button type = "button" id="darkModeToggle" class="btn btn-dark floating-toggle">
+    <img id="darkModeIcon" src="light.png" height = "40px" width = "40px" alt="Light Mode"><!-- Bootstrap icon -->
+  </button>
+  
 
   <a id="home"></a>
   <div class="container-fluid align-items-center d-flex justify-content-center">
@@ -425,9 +429,9 @@
   <div class="container-fluid d-flex justify-content-center align-items">
     <div class="hidden row justify-content-center align-items-center d-flex min-height-65vh" id="research">
       <div class="col-lg-4 p-3 align-items-center d-flex justify-content-center">
-        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
+        <div id="linkedin" class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
           data-type="HORIZONTAL" data-vanity="isaac-song-30b78019b" data-version="v1"></div>
-      </div>
+      </div>              
       <div class="col-lg-7">
         <h1><img class = "mb-3" src="user.png" height="60px" width="60px"> About Me</h1>
         <p>I am a undergraduate student at Westmont College in Santa Barbara stuyding computer science and chemistry.
@@ -454,6 +458,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
   <script src="app.js"></script>
+  <script src = "darkmode.js"></script>
 </body>
 
 </html>

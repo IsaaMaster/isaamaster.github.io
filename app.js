@@ -1,13 +1,40 @@
 
-
-
-
-
 $(document).ready(function() {
 
 
    const navbarHeight = document.querySelector(".navbar").offsetHeight;
    document.body.style.paddingTop = `${navbarHeight}px`;
+
+   document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    // Load saved theme from localStorage
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      body.setAttribute("data-bs-theme", savedTheme);
+      updateIcon(savedTheme);
+    }
+
+    // Toggle dark mode
+    toggleButton.addEventListener("click", function () {
+      const currentTheme = body.getAttribute("data-bs-theme") || "light";
+      const newTheme = currentTheme === "light" ? "dark" : "light";
+      console.log(newTheme);
+      body.setAttribute("data-bs-theme", newTheme);
+      localStorage.setItem("theme", newTheme); // Save the preference
+      updateIcon(newTheme);
+    });
+
+    // Update the icon based on the theme
+    function updateIcon(theme) {
+        if (theme === "dark") {
+            darkModeIcon.src = "dark.png"; // Dark mode image
+        } else {
+            darkModeIcon.src = "light.png"; // Light mode image
+        }
+    }
+  });
    
    const myCarouselElement = document.querySelector('#carouselExampleCaptions')
 

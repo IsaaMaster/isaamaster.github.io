@@ -26,8 +26,6 @@ a {
 }
 
 body {
-    background: white;
-    color: black;
     background-repeat: no-repeat;
     background-size:cover;
     background-position: bottom;
@@ -49,7 +47,6 @@ body {
 
 #customNav a{
   padding: 0px 20px;
-  color: black;  
 }
 
 
@@ -120,3 +117,36 @@ div.webSection{
   cursor: pointer;
 }
 
+[data-bs-theme="dark"] {
+  --bs-body-color: #f8f9fa; /* A brighter white for text, if desired */
+}
+
+
+.floating-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.floating-toggle:hover {
+  background-color: #6c757d; /* A hover color */
+  transform: scale(1.1);
+}
+
+[data-bs-theme="dark"] .floating-toggle {
+  background-color: #343a40; /* Adjust for dark mode */
+  color: #f8f9fa; /* Icon/text color for dark mode */
+}
+
+[data-bs-theme="dark"] .floating-toggle:hover {
+  background-color: #495057;
+}
