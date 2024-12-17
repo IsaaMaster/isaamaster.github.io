@@ -33,14 +33,6 @@ body {
 }
 
 
-#name{
-  font-size: 350%;
-}
-
-#description{
-  font-size: 150%;
-}
-
 #customNav{
   font-size: 165%;
 }
@@ -119,8 +111,8 @@ div.webSection{
 
 .floating-toggle {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
   z-index: 1000;
   border-radius: 50%;
   width: 55px;

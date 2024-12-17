@@ -1,464 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Isaac Z. Song</title>
+    <link rel="icon" href="profile.jpg" type="image/x-icon">  
+    <link defer rel="stylesheet" href="app.css">
+  </head>
+  <body data-bs-theme="dark">
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark" id="customNav">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3" href="index.html">Isaac Z. Song</a>
+        <div class="collapse navbar-collapse">
+          <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <a class="nav-link" target="_self" href="#home"><img class = "mb-3" src="home.png" height="35px" width="35x"> Home</a>
+            <a class="nav-link" target="_self" href="#projects"><img class = "mb-2" src="startup.png" height="35px" width="35x"> Projects</a>
+            <a class="nav-link" target="_self" href="#experience"><img class = "mb-3" src="briefcase.png" height="35px" width="35x"> Experience</a>
+            <a class="nav-link" target="_self" href="#about"><img class = "mb-2" src="user.png" height="35px" width="35x"> About</a>
+          </div> 
+        </div>
+      </div>
+    </nav>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <title>Isaac Song</title>
-  <link rel="icon" href="profile.jpg" type="image/x-icon">
-
-  
-  <link defer rel="stylesheet" href="app.css" />
-</head>
-
-<body data-bs-theme="dark">
-  <nav class="navbar fixed-top navbar-expand-lg bg-dark" id="customNav">
-    <div class="container-fluid">
-      <a class="navbar-brand" style="font-size:150%;" href="index.html">Isaac Z. Song</a>
-      <div class="collapse navbar-collapse">
-        <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <a class="nav-link" target="_self" href="#home"><img class = "mb-3" src="home.png" height="35px" width="35x"> Home</a>
-          <a class="nav-link" target="_self" href="#projects"><img class = "mb-2" src="startup.png" height="35px" width="35x"> Projects</a>
-          <a class="nav-link" target="_self" href="#experience"><img class = "mb-3" src="briefcase.png" height="35px" width="35x"> Experience</a>
-          <a href="#about" class="nav-link" target="_self"><img class = "mb-2" src="user.png" height="35px" width="35x"> About</a>
-        </div> 
+    <button type = "button" id="darkModeToggle" class="btn btn-dark bg-light floating-toggle">
+      <img id="darkModeIcon" src="light.png" height = "40px" width = "40px" alt="Light Mode">
+    </button>
+    
+    <a id="home"></a>
+    <div class="container-fluid align-items-center d-flex justify-content-center">
+      <div class="justify-content-center row hidden align-items-center py-5" style="width: 100%">
+        <div class="col-lg-5">
+          <img class="rounded-5" src="Principal_Photo.jpg" height="100%" width="100%">
+        </div>
+        <div class="col-lg-5 text-center align-items-center d-flex flex-column justify-content-center">
+          <div id="me">
+            <h1 class = "fs-1">&#128075Hi! This is Isaac Song.</h1>
+            <h4>CS, Math and Chem @ Westmont College</h3>
+            <p class = "fs-5">Incoming SWE Intern at Captial One, ex-Principal Financial Group SWE Intern, ex-NRG Data Analyst Intern, Lead CS TA, and
+              President of the Westmont CS Club</p>
+          </div>
+          <div class = "mx-3" id="links">
+            <span style="margin: 0px 20px;">
+              <a class="icon" href="https://www.instagram.com/isaac.z.song/">
+                <img class="icon" src="instagram.webp" height="60px" width="60px">
+              </a>
+            </span>
+            <span class = "mx-3">
+              <a class="icon" href="https://www.linkedin.com/in/isaac-song-30b78019b/">
+                <img class="icon" src="linkedin.png" height="60px" width="60px">
+              </a>
+            </span>
+            <span class = "mx-3">
+              <a class = "icon" href="https://github.com/IsaaMaster">
+                <img class="icon" src="github.png" height="60px" width="60px">
+              </a>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
 
-  <button type = "button" id="darkModeToggle" class="btn btn-dark bg-light floating-toggle">
-    <img id="darkModeIcon" src="light.png" height = "40px" width = "40px" alt="Light Mode"><!-- Bootstrap icon -->
-  </button>
-  
-
-  <a id="home"></a>
-  <div class="container-fluid align-items-center d-flex justify-content-center">
-    <div class="justify-content-center row hidden align-items-center py-5" style="width: 100%">
-      <div class="col-lg-5">
-        <img class="rounded-5" src="Principal_Photo.jpg" height="100%" width="100%">
+    <a id="projects"></a>
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1><img class = "mb-3" src="startup.png" height="60px" width="60px"> Projects</h1>
+        <p class="fs-5">A collection of websites I've built in my free time. Click on a
+          project to learn more!
+        </p>
       </div>
-
-      <div class="col-lg-5  text-center align-items-center d-flex flex-column justify-content-center">
-        <div id="me">
-          <h1 id="name">&#128075Hi! This is Isaac Song.</h1>
-          <h3 id="description">CS, Math and Chem @ Westmont College</h3>
-          <p id="description">Incoming SWE Intern at Captial One, ex-Principal Financial Group SWE Intern, ex-NRG Data Analyst Intern, Lead CS TA, and
-            President of the Westmont CS Club</p>
+    </div>
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-md-8 p-3">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-theme="dark">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" id="noteworks">
+              <img src="NotesNew.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Noteworks5</h3>
+                <p>A simple, yet highly functional note taking app.</p>
+              </div>
+            </div>
+            <div class="carousel-item" id="reversi">
+              <img src="largeblurrReversi.png" class="d-block w-100 " style = "background-color: white;" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Othello</h3>
+                <p>A modern take on a classic game.</p>
+              </div>
+            </div>
+            <div class="carousel-item" id = "stocksBot">
+              <img src="StocksBot.png" alt="stock bot chat" class = "d-block w-100">
+              <div class = "carousel-caption d-none d-md-block">
+                <h3>Discord Stocks Bot</h3>
+                <p>An easy way to track the market.</p>
+              </div>
+            </div>
+            <div class="carousel-item" id="personal">
+              <img src="personal.png" class="d-block w-100"  style = "background-color: white;" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Isaaczsong.me</h3>
+                <p>A glimpse of who I am. </p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
+    </div>
 
-        <div style="margin: 17px 0px;" id="links">
-          <span style="margin: 0px 20px;">
-            <a class="icon" href="https://www.instagram.com/isaac.z.song/">
-              <img class="icon" src="instagram.webp" height="60px" width="60px">
+
+    <!--Noteworks 5 Modal-->
+    <div class="modal fade" id="noteWorksModal" tabindex="-1" aria-labelledby="noteWorksModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalLabel">
+              Noteworks5
+            </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <div class="text-center" style="margin-bottom: 10px;">
+              <h4>Tech Stack:</h4>
+              <img class="techIcon" src="icons/postgresql.png" alt="postgresql">
+              <img class="techIcon" src="icons/django.png" alt="django" style="width:24px;">
+              <img class="techIcon" src="icons/python.png" alt="python">
+              <img class="techIcon" src="icons/heroku.png" alt="heroku" style="width:24px; background: none;">
+              <img class="techIcon" src="icons/bootstrap.png" alt="boostrap">
+              <img class="techIcon" src="icons/azure.png" alt="azure">
+              <img class="techIcon" src="icons/jQuery.png" alt="jQuery">
+              <img class="techIcon" src="icons/htmlcssjs.png" alt="htmlcssjs" style="width: 90px; height:34px;">
+            </div>
+            <p>Noteworks was a project I started for fun and to improve my web development skills. However, it has grown
+              to become one my largest projects and currently has a host of different features. At its core, it is a
+              simple notetaking app, designed to allow users to write down thoughts and ideas without the distractions of
+              having too many settings. At the same time, it still has the necessary features of a notetaking app and a
+              simply elegant design.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a target="_blank" class="btn btn-primary" href="https://noteworks5.herokuapp.com/">
+              View Site!
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right mb-2" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+              </svg>
             </a>
-          </span>
-          <span style="margin: 0px 20px;">
-            <a class="icon" href="https://www.linkedin.com/in/isaac-song-30b78019b/">
-              <img class="icon" src="linkedin.png" height="60px" width="60px">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Reversi Modal-->
+    <div class="modal fade" id="reversiModal" tabindex="-1" aria-labelledby="reversiModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalLabel">
+              Reversi
+            </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body justify-content-center ">
+            <div class="text-center" style="margin-bottom: 10px;">
+              <h4>Tech Stack:</h4>
+              <img class="techIcon" src="icons/node.png" alt="nodejs" style="width: 90px; height:34px;">
+              <img class="techIcon" src="icons/heroku.png" alt="heroku" style="width:24px;">
+              <img class="techIcon" src="icons/sockets.png" alt="sockets.io">
+              <img class="techIcon" src="icons/bootstrap.png" alt="python">
+              <img class="techIcon" src="icons/jQuery.png" alt="python">
+              <img class="techIcon" src="icons/htmlcssjs.png" alt="python" style="width: 90px; height:34px;">
+            </div>
+            <p>Remade Reversi (aka Othello) as a web app, allowing users to play against each other online, as well as
+              send game challenges and chat in lobbies. If you want to check out the website, make sure to open it in two
+              pages you that you can try playing against yourself.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a target="_blank" class="btn btn-primary" href="https://reversi-isaacsong.herokuapp.com/">
+              View Site!
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right mb-2" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+              </svg>
             </a>
-          </span>
-          <span class="icon" style="margin: 0px 20px;">
-            <a href="https://github.com/IsaaMaster">
-              <img class="icon" src="github.png" height="60px" width="60px">
-            </a>
-          </span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <a id="projects"></a>
-  <div style="margin-bottom: 80px;"></div>
-  <div class="row">
-    <div class="col-12 text-center" title="">
-      <h1><img class = "mb-3" src="startup.png" height="60px" width="60px"> Projects</h1>
-      <p class="fs-5">A collection of websites I've built in my free time. Click on a
-        project to learn more!</p>
-    </div>
-  </div>
-  <div class="row d-flex justify-content-center align-items-center">
-    <div class="col-md-8 p-3">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-theme="dark">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" id="noteworks">
-            <img src="NotesNew.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Noteworks5</h3>
-              <p>A simple, yet highly functional note taking app.</p>
-            </div>
-          </div>
-          <div class="carousel-item" id="reversi">
-            <img src="largeblurrReversi.png" class="d-block w-100 " style = "background-color: white;" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Othello</h3>
-              <p>A modern take on a classic game.</p>
-            </div>
-          </div>
-          <div class="carousel-item" id = "stocksBot">
-            <img src="StocksBot.png" alt="stock bot chat" class = "d-block w-100">
-            <div class = "carousel-caption d-none d-md-block">
-              <h3>Discord Stocks Bot</h3>
-              <p>An easy way to track the market.</p>
-            </div>
-          </div>
-          <div class="carousel-item" id="personal">
-            <img src="personal.png" class="d-block w-100"  style = "background-color: white;" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Isaaczsong.me</h3>
-              <p>A glimpse of who I am. </p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </div>
 
 
-  <!--Noteworks 5 Modal-->
-  <div class="modal fade" id="noteWorksModal" tabindex="-1" aria-labelledby="noteWorksModal" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title" id="exampleModalLabel">
-            Noteworks5
-          </h2>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-
-          <div class="text-center" style="margin-bottom: 10px;">
-            <h4>Tech Stack:</h4>
-            <img class="techIcon" src="icons/postgresql.png" alt="postgresql">
-            <img class="techIcon" src="icons/django.png" alt="django" style="width:24px;">
-            <img class="techIcon" src="icons/python.png" alt="python">
-            <img class="techIcon" src="icons/heroku.jpg" alt="heroku" style="width:24px;">
-            <img class="techIcon" src="icons/bootstrap.png" alt="boostrap">
-            <img class="techIcon" src="icons/azure.png" alt="azure">
-            <img class="techIcon" src="icons/jQuery.png" alt="jQuery">
-            <img class="techIcon" src="icons/htmlcssjs.png" alt="htmlcssjs" style="width: 90px; height:34px;">
-          </div>
-          <p>Noteworks was a project I started for fun and to improve my web development skills. However, it has grown
-            to become one my largest projects and currently has a host of different features. At its core, it is a
-            simple notetaking app, designed to allow users to write down thoughts and ideas without the distractions of
-            having too many settings. At the same time, it still has the necessary features of a notetaking app and a
-            simply elegant design.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <a target="_blank" class="btn btn-primary" href="https://noteworks5.herokuapp.com/">
-            View Site!
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-              <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--Reversi Modal-->
-  <div class="modal fade" id="reversiModal" tabindex="-1" aria-labelledby="reversiModal" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title" id="exampleModalLabel">
-            Reversi
-          </h2>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body justify-content-center ">
-          <div class="text-center" style="margin-bottom: 10px;">
-            <h4>Tech Stack:</h4>
-            <img class="techIcon" src="icons/node.png" alt="nodejs" style="width: 90px; height:34px;">
-            <img class="techIcon" src="icons/heroku.jpg" alt="python" style="width:24px;">
-            <img class="techIcon" src="icons/sockets.png" alt="sockets.io">
-            <img class="techIcon" src="icons/bootstrap.png" alt="python">
-            <img class="techIcon" src="icons/jQuery.png" alt="python">
-            <img class="techIcon" src="icons/htmlcssjs.png" alt="python" style="width: 90px; height:34px;">
-
-
-
-          </div>
-          <p>Remade Reversi (aka Othello) as a web app, allowing users to play against each other online, as well as
-            send game challenges and chat in lobbies. If you want to check out the website, make sure to open it in two
-            pages you that you can try playing against yourself.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <a target="_blank" class="btn btn-primary" href="https://reversi-isaacsong.herokuapp.com/">
-            View Site!
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-              <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!--Stocks Bot Modal-->
-  <div class="modal fade" id="stocksBotModal" tabindex="-1" aria-labelledby="stocksBotModal" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title" id="exampleModalLabel">
-            Discord Stocks Bot
-          </h2>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="text-center" style="margin-bottom: 10px;">
-            <h4>Tech Stack:</h4>
-            <img class="techIcon" src="icons/bootstrap.png" alt="python">
-            <img class="techIcon" src="icons/jQuery.png" alt="python">
-            <img class="techIcon" src="icons/htmlcssjs.png" alt="python" style="width: 90px; height:34px;">
-          </div>
-          <p>This was one of my first end to end projects, created for fun so that I could see stocks in my discord channel. There's also features to simulate trading and compete with friends with the highest gains. </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!--Personal Modal-->
-  <div class="modal fade" id="personalModal" tabindex="-1" aria-labelledby="personalWebsiteModal" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title" id="exampleModalLabel">
-            Personal Website
-          </h2>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="text-center" style="margin-bottom: 10px;">
-            <h4>Tech Stack:</h4>
-            <img class="techIcon" src="icons/bootstrap.png" alt="python">
-            <img class="techIcon" src="icons/jQuery.png" alt="python">
-            <img class="techIcon" src="icons/htmlcssjs.png" alt="python" style="width: 90px; height:34px;">
-          </div>
-          <p>One of my more recently proejcts, but far overdue, this project is the one you are looking at right now and
-            was created to showcase my projects and experience. Thanks to <a href="https://www.flaticon.com/free-icons/crescent-moon" title="crescent moon icons">juicy_fish</a> for the icons!</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <a id="experience"></a>
-  <div style="margin-bottom: 40px;"></div>
-  <div class="container-fluid min-vh-100 d-flex justify-content-center align-items">
-    <div class="justify-content-center row hidden align-items-center d-flex" id="research">
-      <div class="col-lg-6 py-3">
-        <h1 class="py-11s"><img class = "mb-3" src="briefcase.png" height="60px" width="60x"> Experience</h1>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero"
-                aria-expanded="false" aria-controls="collapseZero">
-                <h4>
-                  <img src="Capital_One_Logo.png" alt="Principal Logo" height="30px" width="75px">
-                  Capital One SWE Intern
-                </h4>
-              </button>
+    <!--Stocks Bot Modal-->
+    <div class="modal fade" id="stocksBotModal" tabindex="-1" aria-labelledby="stocksBotModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalLabel">
+              Discord Stocks Bot
             </h2>
-            <div id="collapseZero" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>Summer 2025</p>
-                <p>Incoming SWE Intern at Captial One</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center" style="margin-bottom: 10px;">
+              <h4>Tech Stack:</h4>
+              <img class="techIcon" src="icons/python.png" alt="python">
+            </div>
+            <p>This was one of my first end to end projects, created for fun so that I could see stocks in my discord channel. There's also features to simulate trading and compete with friends with the highest gains. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Personal Modal-->
+    <div class="modal fade" id="personalModal" tabindex="-1" aria-labelledby="personalWebsiteModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalLabel">
+              Personal Website
+            </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center" style="margin-bottom: 10px;">
+              <h4>Tech Stack:</h4>
+              <img class="techIcon" src="icons/bootstrap.png" alt="python">
+              <img class="techIcon" src="icons/jQuery.png" alt="python">
+              <img class="techIcon" src="icons/htmlcssjs.png" alt="python" style="width: 90px; height:34px;">
+            </div>
+            <p>One of my more recently proejcts, but far overdue, this project is the one you are looking at right now and
+              was created to showcase my projects and experience. Thanks to <a href="https://www.flaticon.com/free-icons/crescent-moon" title="crescent moon icons">juicy_fish</a> for the icons!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <a id="experience"></a>
+    <div class="container-fluid min-vh-100 d-flex justify-content-center align-items">
+      <div class="justify-content-center row hidden align-items-center d-flex" id="research">
+        <div class="col-lg-6 py-3">
+          <h1 class="py-11s"><img class = "mb-3" src="briefcase.png" height="60px" width="60x"> Experience</h1>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero"
+                  aria-expanded="false" aria-controls="collapseZero">
+                  <h4>
+                    <img src="Capital_One_Logo.png" alt="Principal Logo" height="30px" width="75px">
+                    Capital One SWE Intern
+                  </h4>
+                </button>
+              </h2>
+              <div id="collapseZero" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Summer 2025</p>
+                  <p>Incoming SWE Intern at Captial One</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                aria-expanded="false" aria-controls="collapseOne">
-                <h4>
-                  <img src="Principal_Logo.png" alt="Principal Logo" height="30px" width="25px">
-                  Principal Financial Group (NASDAQ: PFG) SWE Intern
-                </h4>
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>May 2024 - August 2024</p>
-                <p>
-                  Automated the creation of YAML files to define 96 Lit-based web components in Drupal using JS for 12
-                  customer-facing sites with over 4.7M visits per month (including principal.com), saving developers 2-8
-                  hours per library version update and increasing the number of supported components by 48%.
-                </p>
-                <p>
-                  Wrote 31 unit and functional JEST tests with over 120 assertions to ensure the quality of back-end
-                  build scripts, integrating these tests into current GitHub workflows, and achieving 100% code
-                  coverage.
-                </p>
-                <p>
-                  Trained an Amazon Q model on 200+ GitHub repositories to build Principal branded Next.js web apps,
-                  cleaning and filtering over 300 MB of the training data with Python.
-                </p>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="false" aria-controls="collapseOne">
+                  <h4>
+                    <img src="Principal_Logo.png" alt="Principal Logo" height="30px" width="25px">
+                    Principal Financial Group (NASDAQ: PFG) SWE Intern
+                  </h4>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>May 2024 - August 2024</p>
+                  <p>
+                    Automated the creation of YAML files to define 96 Lit-based web components in Drupal using JS for 12
+                    customer-facing sites with over 4.7M visits per month (including principal.com), saving developers 2-8
+                    hours per library version update and increasing the number of supported components by 48%.
+                  </p>
+                  <p>
+                    Wrote 31 unit and functional JEST tests with over 120 assertions to ensure the quality of back-end
+                    build scripts, integrating these tests into current GitHub workflows, and achieving 100% code
+                    coverage.
+                  </p>
+                  <p>
+                    Trained an Amazon Q model on 200+ GitHub repositories to build Principal branded Next.js web apps,
+                    cleaning and filtering over 300 MB of the training data with Python.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <h4>&#129516;Nishimura Research Group Data Analyst Intern</h4>
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>Jan 2023 - August 2023</p>
-                <p>
-                  Automated the regression analysis of millions of data points onto Avrami crystal growth models with
-                  Python, thus decreasing data processing times by two hours a day and improving the consistency of
-                  predicted models by 30%.
-                </p>
-                <p>
-                  Organized and analyzed over 12.5 million data points per day with Excel macros, MATLAB, SciPy, and
-                  Matplotlib, ultimately calculating 60% of quantitative findings reported in two scientific
-                  publications.
-                </p>
-                <h2 class="pt-3">
-                  &#128209Publications
-                </h2>
-                <p class="researchlink">
-                  <a
-                    href="https://www.westmont.edu/sites/default/files/2023-07/biphenyl%20on%20cyclohexane%20and%20benzene_final_0.pdf">
-                    "Effect of Cyclohexane and Benzene on the Disorder-to-Order Trasition of Biphenyl"</a>
-                </p>
-                <p class="researchlink">
-                  <a
-                    href="https://www.westmont.edu/sites/default/files/2023-08/aliphatic%20alcohols%3Acycloalkanes%3An-alkanes%20under%20biphenyl_final.pdf">
-                    "Changing the Onset of the Disorder-to-Order Transition and Increasing the Density of Defect Sites
-                    in Biphenyl Adlayer on Aluminum Oxide"
-                  </a>
-                </p>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h4>&#129516;Nishimura Research Group Data Analyst Intern</h4>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Jan 2023 - August 2023</p>
+                  <p>
+                    Automated the regression analysis of millions of data points onto Avrami crystal growth models with
+                    Python, thus decreasing data processing times by two hours a day and improving the consistency of
+                    predicted models by 30%.
+                  </p>
+                  <p>
+                    Organized and analyzed over 12.5 million data points per day with Excel macros, MATLAB, SciPy, and
+                    Matplotlib, ultimately calculating 60% of quantitative findings reported in two scientific
+                    publications.
+                  </p>
+                  <h2 class="pt-3">
+                    &#128209Publications
+                  </h2>
+                  <p class="researchlink">
+                    <a
+                      href="https://www.westmont.edu/sites/default/files/2023-07/biphenyl%20on%20cyclohexane%20and%20benzene_final_0.pdf">
+                      "Effect of Cyclohexane and Benzene on the Disorder-to-Order Trasition of Biphenyl"</a>
+                  </p>
+                  <p class="researchlink">
+                    <a
+                      href="https://www.westmont.edu/sites/default/files/2023-08/aliphatic%20alcohols%3Acycloalkanes%3An-alkanes%20under%20biphenyl_final.pdf">
+                      "Changing the Onset of the Disorder-to-Order Transition and Increasing the Density of Defect Sites
+                      in Biphenyl Adlayer on Aluminum Oxide"
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <h4>
-                  <img src="Westmont_Logo.jpg" alt="Westmont Logo" height="40px" width="40px">
-                  Lead Computer Science Teaching Assistant
-                </h4>
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>Sep 2022 - Present</p>
-                <p>
-                  Led weekly study sessions for Discrete Math and Introduction to Computer Science, proctored tests, and
-                  graded exams for over 60 students per semester.
-                </p>
-                <p>
-                  Developed automated Python grading scripts and rigorous test cases used to grade over 70% of CS-10
-                  assignments and increased grading efficiency by 5-fold.
-                </p>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <h4>
+                    <img src="Westmont_Logo.jpg" alt="Westmont Logo" height="40px" width="40px">
+                    Lead Computer Science Teaching Assistant
+                  </h4>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Sep 2022 - Present</p>
+                  <p>
+                    Led weekly study sessions for Discrete Math and Introduction to Computer Science, proctored tests, and
+                    graded exams for over 60 students per semester.
+                  </p>
+                  <p>
+                    Developed automated Python grading scripts and rigorous test cases used to grade over 70% of CS-10
+                    assignments and increased grading efficiency by 5-fold.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                <h4>
-                  <img src="CodeForFun_Logo.png" alt="Westmont Logo" height="35px" width="35px">
-                  Code for Fun Lead Python Instructor
-                </h4>
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>May 2021 - July 2021</p>
-                <p>
-                  Taught the fundamentals of computer sceince and Python to middle students on Zoom in classes of 8-15
-                  students. Additionally, taught private lessons, training students in the fundamentals of
-                  object-oriented programming via a summer-long project.
-                </p>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                  <h4>
+                    <img src="CodeForFun_Logo.png" alt="Westmont Logo" height="35px" width="35px">
+                    Code for Fun Lead Python Instructor
+                  </h4>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>May 2021 - July 2021</p>
+                  <p>
+                    Taught the fundamentals of computer sceince and Python to middle students on Zoom in classes of 8-15
+                    students. Additionally, taught private lessons, training students in the fundamentals of
+                    object-oriented programming via a summer-long project.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-lg-4 pt-3 ps-3">
-        <img class="rounded-5" src="working.JPG" alt="profile" height="100%" width="100%">
-      </div>
-    </div>
-  </div>
-
-  <a id="about"></a>
-  <div class="container-fluid d-flex justify-content-center align-items">
-    <div class="hidden row justify-content-center align-items-center d-flex min-height-65vh" id="research">
-      <div class="col-lg-4 p-3 align-items-center d-flex justify-content-center">
-        <div id="linkedin" class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
-          data-type="HORIZONTAL" data-vanity="isaac-song-30b78019b" data-version="v1"></div>
-      </div>              
-      <div class="col-lg-7">
-        <h1><img class = "mb-3" src="user.png" height="60px" width="60px"> About Me</h1>
-        <p>I am a undergraduate student at Westmont College in Santa Barbara stuyding computer science and chemistry.
-          Currently, I am involved with full-stack web and software development, thin film research, club leaderhip positions, and TAing for
-          several classes. In my free time, I enjoy going to the beach with friends, tossing the frisbee around, eating tasty food, and
-          playing strategy board games.</p>
-        <p>If you want to reach out, please email me at isong@westmont.edu. Alternatively, feel free to connect with me
-          on Linkedin.</p>
+        <div class="col-lg-4 pt-3 ps-3">
+          <img class="rounded-5" src="working.JPG" alt="profile" height="100%" width="100%">
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-    integrity="sha384-Ft/vb48LwsAEtgltj7o+6vtS2esTU9PCpDqcXs4OCVQFZu5BqprHtUCZ4kjK+bpE"
-    crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
-    integrity="sha384-4D3G3GikQs6hLlLZGdz5wLFzuqE9v4yVGAcOH86y23JqBDPzj9viv0EqyfIa6YUL"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-  <script src="app.js"></script>
-  <script src = "darkmode.js"></script>
-</body>
+    <a id="about"></a>
+    <div class="container-fluid d-flex justify-content-center align-items">
+      <div class="hidden row justify-content-center align-items-center d-flex min-height-65vh" id="research">
+        <div class="col-lg-4 p-3 align-items-center d-flex justify-content-center">
+          <div id="linkedin" class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
+            data-type="HORIZONTAL" data-vanity="isaac-song-30b78019b" data-version="v1"></div>
+        </div>              
+        <div class="col-lg-7">
+          <h1><img class = "mb-3" src="user.png" height="60px" width="60px"> About Me</h1>
+          <p>I am a undergraduate student at Westmont College in Santa Barbara stuyding computer science and chemistry.
+            Currently, I am involved with full-stack web and software development, thin film research, club leaderhip positions, and TAing for
+            several classes. In my free time, I enjoy going to the beach with friends, tossing the frisbee around, eating tasty food, and
+            playing strategy board games.</p>
+          <p>If you want to reach out, please email me at isong@westmont.edu. Alternatively, feel free to connect with me
+            on Linkedin.</p>
+        </div>
+      </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha384-Ft/vb48LwsAEtgltj7o+6vtS2esTU9PCpDqcXs4OCVQFZu5BqprHtUCZ4kjK+bpE"
+      crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+      integrity="sha384-4D3G3GikQs6hLlLZGdz5wLFzuqE9v4yVGAcOH86y23JqBDPzj9viv0EqyfIa6YUL"
+      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <script src="app.js"></script>
+    <script src = "darkmode.js"></script>
+  </body>
 </html>
